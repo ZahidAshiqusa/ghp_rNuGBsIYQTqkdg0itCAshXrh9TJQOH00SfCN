@@ -1,0 +1,11 @@
+{
+  "name": "ali-institute",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "octokit": "^2.0.0"
+  }
+}

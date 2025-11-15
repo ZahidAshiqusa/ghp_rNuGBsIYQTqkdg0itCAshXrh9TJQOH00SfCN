@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main style="max-width:600px; margin-top:40px; margin-left:auto; margin-right:auto;">
+    <div id="loginBox">
+      <h2>Admin Login</h2>
+      <input type="password" id="adminPass" placeholder="Enter Password" />
+      <button onclick="login()">Login</button>
+    </div>
+
+    <div id="dashboard" style="display:none;">
+      <h2>Dashboard</h2>
+
+      <button onclick="loadData()">Refresh Data</button>
+
+      <h3>Download Files</h3>
+      <label>Select Month:</label>
+      <input type="month" id="monthPick" />
+      <button onclick="downloadVCF()">Download VCF</button>
+      <button onclick="downloadJSON()">Download JSON</button>
+
+      <h3>All Entries</h3>
+      <div id="entries"></div>
+    </div>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
